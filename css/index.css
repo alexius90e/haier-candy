@@ -1,6 +1,24 @@
+@font-face {
+  font-family: "AeonikPro";
+  src: url("../fonts/AeonikPro-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AeonikPro";
+  src: url("../fonts/AeonikPro-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AeonikPro";
+  src: url("../fonts/AeonikPro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
 html {
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "AeonikPro", sans-serif;
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
@@ -18,7 +36,7 @@ a,
 button,
 input,
 textarea {
-  font-family: "Montserrat", sans-serif;
+  font-family: "AeonikPro", sans-serif;
   text-decoration: none;
 }
 
@@ -115,6 +133,9 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc(50% - 5px);
           flex: 0 0 calc(50% - 5px);
@@ -149,6 +170,12 @@ textarea {
 .haier__menu-link:hover::after {
   opacity: 1;
 }
+.haier__menu-link_wide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: none;
+}
 .haier__menu-link-thumb {
   position: relative;
   z-index: 10;
@@ -157,11 +184,15 @@ textarea {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   max-width: 100%;
+  max-height: 100px;
   height: auto;
 }
 .haier__menu-link-text {
   position: relative;
   z-index: 10;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   font-weight: 700;
   font-size: 16px;
   color: #fff;
@@ -195,6 +226,8 @@ textarea {
   min-height: 300px;
   margin: 0 -20px 20px;
   padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .haier__card-info-photo {
   position: absolute;

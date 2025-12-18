@@ -80,6 +80,7 @@
       z-index: 1;
       display: flex;
       align-items: center;
+      justify-content: center;
       flex: 0 0 calc(100% / 2 - 10px / 2);
       gap: 5px;
       max-width: calc(100% / 2 - 10px / 2);
@@ -112,18 +113,25 @@
         opacity: 1;
       }
 
+      &_wide {
+        flex: 0 0 100%;
+        max-width: none;
+      }
+
       &-thumb {
         position: relative;
         z-index: 10;
         display: block;
         flex: 0 0 auto;
         max-width: 100%;
+        max-height: 100px;
         height: auto;
       }
 
       &-text {
         position: relative;
         z-index: 10;
+        flex: 0 0 auto;
         font-weight: 700;
         font-size: 16px;
         color: #fff;
@@ -158,6 +166,7 @@
       min-height: 300px;
       margin: 0 -20px 20px;
       padding: 20px;
+      box-sizing: border-box;
 
       &-photo {
         position: absolute;
