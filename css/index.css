@@ -161,8 +161,7 @@ textarea {
   inset: 0;
   z-index: 0;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#2962f6), to(#8919f6));
-  background: linear-gradient(90deg, #2962f6 0%, #8919f6 100%);
+  background-color: #6dc4c3;
   opacity: 0;
   -webkit-transition: opacity ease-out 0.2s;
   transition: opacity ease-out 0.2s;
@@ -200,7 +199,7 @@ textarea {
   transition: color ease-out 0.2s;
 }
 .candy__menu-link:hover .candy__menu-link-text {
-  color: #2962f6;
+  color: #6dc4c3;
 }
 .candy__cards {
   display: block;

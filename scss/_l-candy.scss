@@ -104,7 +104,7 @@
         inset: 0;
         z-index: 0;
         border-radius: 5px;
-        background: linear-gradient(90deg, #2962f6 0%, #8919f6 100%);
+        background-color: #6dc4c3;
         opacity: 0;
         transition: opacity ease-out 0.2s;
       }
@@ -139,7 +139,7 @@
       }
 
       &:hover &-text {
-        color: #2962f6;
+        color: #6dc4c3;
       }
     }
   }
